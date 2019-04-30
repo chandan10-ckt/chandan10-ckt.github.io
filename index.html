@@ -557,7 +557,71 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<!----//features----->	
 
 
+					<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>Experiments and Result:<span class="second"> </span></h3>
+						<p>Once the above specified hardware and software part is integrated together, the bot can be controlled by the joystick while successfully avoiding and steering away from any obstacle on its path.</p> 
+								<b>1)-In order to find the optimal distance after which the bot considers an object as an obstacle, various experiments were conducted to find the desired value that allows the bot to turn smoothly without colliding. This optimal distance which depends on the RPM of motors and the size of bot, is found out to 40cm in our case.</b><br>
+								<b>2)-Due to limited RAM and processing power available in the RPI, in some cases there is considerable amount of lag.</b><br>
+								<b>3)-In order to run multiple python files, as in the case of interactive face and integrating sensor’s with motor driver, various techniques like Python Memcache were used. However, the best and
+								fastest results were obtained by using threading.</b><br>
+								<b>4)-QR code was initially scanned using OpenCV but this didn’t allow its use in real time. To overcome this, a faster and more efficient library ZBar has been used.</b><br>
+								<b>5)-To implement Scene Understanding, we have use Microsoft Caption Bot API which uses internet in order to generate the caption in 2secs, which otherwise is taking around 80sec on the laptop to generate caption for an image.</b><br>
+								<b>6)-Since, no such tool is available for Object detection, we have to run the CNN on each image which takes around 40sec to process a single image.</b><br>
+								<p>Once all the required changes are done, the iBot is able to function properly and as required.</p>
+					</div>
 
+
+						<!----features-grids----->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								
+								<div class="col-md-10 features-info">
+									<img src="images/cap-34.jpg" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+						<!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<!-- <span class="f-icon3"> </span> -->
+								</div>
+								<div class="col-md-10 features-info">
+									<img src="images/cap-33.jpg" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							
+						</div><!---end-features-grid---->
+						
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->		
+
+
+					<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>Summary and Future work:<span class="second"> </span></h3>
+						<p>Our bot is now capable of moving in all directions and is successfully avoiding obstacles by taking a slight detour from its current path. Along with the movement, the functionalities explained in the previous sections are operating fine. The QR code detection is working in all its proposed modes. It is capable of reading QR codes from live scene and completing further instructions according to the contents of the code. For the image files, it is successfully generating quite accurate description of the scene and dictating it to the user. We have kept the object detection part separately for now because due to lack of computing power on the bot, it is taking much time to process and its performance in other areas is getting hampered due to this. In future versions this can be avoided by using better processors.</p> 
+						<p>The functionalities of this bot can be further improved to make it a very efficient assistant by including features like real time question-answering from the scene, or rather than manually controlling the bot, it can be programmed to follow a certain person, or a certain device which is kept in the user’s pocket.
+						These type of modification can be helpful in assisting a blind person. On his voice command the bot can depict the scene in front of him or also warn him of certain obstacle coming in the way. It can also be personalized to remind you of your appointments or other important tasks.</p>
+					</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->	
 
 
 
@@ -597,6 +661,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							 <!-- start content_slider -->
 							 <div class="container">
 						       <div id="owl-demo" class="owl-carousel">
+							<div class="item">
+					                	<img class="lazyOwl" data-src="images/cap-35.jpg" alt="screen-name">
+					                </div>       
 					                <div class="item">
 					                	<img class="lazyOwl" data-src="images/cap-77.jpg" alt="screen-name">
 					                </div>
